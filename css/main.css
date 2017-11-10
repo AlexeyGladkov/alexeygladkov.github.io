@@ -1,0 +1,111 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+}
+
+header {
+	position: relative;
+	background: #fff url(../img/main-bg.jpg) center center no-repeat;
+	height: 100vh;
+	width: 100%;
+}
+
+.main-overlay {
+	position: absolute;
+	background-color: rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.main-header {
+	position: relative;
+	text-align: center;
+	padding-top: 470px;
+	color: #fff;
+}
+
+.main-header h1 {
+	font-size: 47px;
+	text-transform: uppercase;
+}
+
+.main-header p {
+	font-size: 30px;
+}
+
+.main-line {
+	height: 2px;
+	width: 212px;
+	background-color: #fff;
+	margin: 0 auto;
+}
+
+section h1 {
+	text-align: center;
+	margin: 110px auto 280px auto;
+	text-transform: uppercase;
+	font-size: 35px;
+}
+
+.photo {
+	margin-bottom: 50px;
+	box-shadow: 0px 4px 29px 0px rgba(87, 92, 97, 0.54);
+}
+
+section a {
+	margin-left: 90px;
+	color: #333;
+}
+
+section a:hover {
+	text-decoration: none;
+	border-bottom: 1px dotted #333;
+}
+/*footer*/
+footer {
+	margin-top: 210px;
+	background-color: #646464;
+	width: 100%;
+	height: 160px;
+	color: #fff;
+	text-align: center;
+	font-size: 23px;
+}
+
+footer .button {
+	font-size: 15px;
+	border-radius: 30px;
+	padding: 10px 40px;
+	border: 1px solid #fff;
+	color: #fff;
+	text-decoration: none;
+}
+
+footer .button:hover {
+	background-color: #fff;
+	color: #646464;
+}
+
+footer i {
+	padding: 8px;
+	margin: 10px;
+	line-height: 5rem;
+	color: #fff;
+	border-radius: 50%;
+	border: 1px solid #fff;
+}
+
+footer i:hover {
+	background-color: #fff;
+	color: #646464;
+}
+
+footer p {
+	margin-bottom: 10px;
+}
+
+footer span {
+	font-size: 15px;
+}

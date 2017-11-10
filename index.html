@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Заголовок сайта -->
+    <title>Алексей Гладков</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fontello.css">
+    <link rel="stylesheet" href="css/fontello-embedded.css">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Фавиконка -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<header>
+  		<div class="main-overlay"></div>
+  		<div class="main-header">
+  			<h1>Алексей Гладков</h1>
+  			<div class="main-line"></div>
+  			<p>Сайт для портфолио</p>
+  		</div>
+  	</header>
+  	<section>
+  		<div class="container">
+  			<h1>Портфолио</h1>
+  			<div class="row">
+  				<div class="col-md-4">
+  					<div class="photo">
+  						<img src="img/portfolio/1.jpg" alt="">
+  					</div>
+  					<a href="#">Смотреть работу</a>
+  					</div>
+  					<div class="col-md-4">
+  					<div class="photo">
+  						<img src="img/portfolio/2.jpg" alt="">
+  					</div>
+  					<a href="#">Смотреть работу</a>
+  					</div>
+  					<div class="col-md-4">
+  					<div class="photo">
+  						<img src="img/portfolio/2.jpg" alt="">
+  					</div>
+  					<a href="#">Смотреть работу</a>
+  				</div>
+  			</div>
+  		</div>
+  	</section>
+  	<footer>
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-md-3">
+  					<p>Алексей Гладков</p>
+  					<span>Разработка сайтов<br>под ключ</span>
+  				</div>
+  				<div class="col-md-6">
+  					<p>Подпишитесь</p>
+  					<a href="#"><i class="icon-vk"></i></a>
+  					<a href="#"><i class="icon-instagram"></i></a>
+  					<a href="#"><i class="icon-twitter"></i></a>
+  				</div>
+  				<div class="col-md-3">
+  					<p>Напишите мне</p>
+  					<a href="#" class="button">Заказать сайт</a> 
+  				</div>
+  			</div>	
+	</div>
+  	</footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+    	$(function() {
+    		var link = $('a[data-toggle="modal"]');
+    		link.on('click', function(event) {
+    			var work = $(this).attr('data-work');
+    			var modal = $('.modal');
+    			modal.find('.modal-body').load(work+'.html');
+    		});
+    	});
+    </script>
+  </body>
+</html>
